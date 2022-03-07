@@ -1,10 +1,16 @@
 # Eclipse
-.settings/
 .classpath
 .project
+.settings/
+.factorypath
 
 # Idea
+.idea/
 *.iml
+*.iws
+
+# Mac
+.DS_Store
 
 # Maven
 target/
@@ -15,6 +21,16 @@ pom.xml.next
 release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
+.flattened-pom.xml
 .mvn/timing.properties
 # https://github.com/takari/maven-wrapper#usage-without-binary-jar
 .mvn/wrapper/maven-wrapper.jar
+
+# Log
+log/
+logs/
+*.log
+
+#other
+pages/
+data/
