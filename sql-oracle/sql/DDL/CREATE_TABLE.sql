@@ -1,2 +1,0 @@
------ normal table
------ partition table
