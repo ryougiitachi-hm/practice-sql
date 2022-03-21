@@ -2,11 +2,18 @@
 ----- simple table
 ------------------------------
 create table T_ORDER_000 (
-	ID BIGINT PRIMARY KEY,
-	ORDER_NBR VARCHAR(32),
-	CDATE DATETIME
+	ID BIGINT NOT NULL,
+	ORDER_NBR VARCHAR(32) NOT NULL,
+	CDATE DATETIME,
+	PRIMARY KEY (ID)
 );
 
+create table T_ORDER_TYPE (
+	ID BIGINT NOT NULL AUTO_INCREMENT,
+	TYPE_CODE VARCHAR(32),
+	CDATE DATETIME,
+	PRIMARY KEY (ID)
+);
 ------------------------------
 ----- partition table
 ----- check whether supports?
@@ -57,3 +64,8 @@ CREATE TABLE T_ORDER_KEY_000 (
     PRIMARY KEY (ID)
 )
 PARTITION BY KEY(ID) PARTITIONS 5;
+
+------------------------------
+----- alter table
+------------------------------
+ALTER TABLE T_ORDER_000 AUTO_INCREMENT = 10;
