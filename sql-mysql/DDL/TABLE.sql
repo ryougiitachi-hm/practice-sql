@@ -5,7 +5,7 @@ create table T_ORDER_000 (
 	ID BIGINT PRIMARY KEY,
 	ORDER_NBR VARCHAR(32),
 	CDATE DATETIME
-);
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 
 ------------------------------
 ----- partition table
