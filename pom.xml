@@ -57,5 +57,6 @@
 		<module>sql-oracle</module>
         <module>sql-mysql</module>
         <module>sql-mongo</module>
+        <module>sql-postgres</module>
     </modules>
 </project>
